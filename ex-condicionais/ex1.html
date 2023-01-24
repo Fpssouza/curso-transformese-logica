@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    var velocidade = Number.parseFloat(prompt("Digite a sua velocidade"));
+
+        if(velocidade > 80.0) 
+        {
+            document.write("Voce foi multado.");
+            document.write("<hr>");
+
+        var valorMulta = ( velocidade - 80.0) * 5.0;
+        document.write("Sua velocidade:" + velocidade +"KM/H");
+        document.write("<hr>");
+
+            document.write("Sua Multa foi de:" + valorMulta.toLocaleString ('pt-BR', {style:'currency' , currency:'BRL'}));
+
+        }
+
+        
+       
+</script>

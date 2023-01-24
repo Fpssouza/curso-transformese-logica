@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<!--
+    Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para
+todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e
+o valor das compras do cliente e calcule o preço com desconto.
+Sabendo que: - Homens ganham 5% de desconto - Mulheres ganham 13% de
+desconto
+-->
+
+<script>
+    
+    var preco = Number.parseFloat(prompt("Digite o valor do produto"));
+    var nome = prompt (" Digite o seu nome");
+    var sexo = prompt("Digite o seu sexo");
+    var valorCompra = parseInt(prompt("Digite o valor total de compra"));
+    var descontoFeminino = preco * (5/100);
+    var descontomasculino = preco * (13/100);
+
+    var precoComDesconto = preco - desconto;
+
+    document.write("O valor total de compras é: " + valorCompra('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<br>");
+    document.write("Você recebeu um desconto de: " + descontoFeminino.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<br>");
+    document.write("Preço com desconto: " + descontomasculino.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+

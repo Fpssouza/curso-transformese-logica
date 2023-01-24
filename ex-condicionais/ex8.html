@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+var codigo = Number(prompt("Digite um codigo do seu cargo"));
+var salario = Number(prompt("Digite o seu salario"));
+
+var aumento;
+var novoSalario;
+
+if(codigo == 1) {
+   document.write("Cargo: Escrituario");
+   document.write("<hr>");
+
+aumento = salario * (50/100);
+novoSalario = salario + aumento
+document.write ("Voce recebera um aumento de: " + aumento.toLocaleString(toLocaleString('pt-BR' , { style:'currency',
+currency: 'BRL' })));
+document.write("<hr>");
+document.write ("seu novo salario sera de: " + novoSalario.toLocaleString(toLocaleString('pt-BR' ,{ style:'currency',
+currency: 'BRL' })));
+document.write("<hr>");
+}
+
+else if(codigo == 2) {
+document.write("Cargo: Secretaria");
+document.write("<hr>");
+
+var aumento = novoSalario *(35/100);
+novoSalario = salario + aumento
+document.write("Voce recebera um aumento de:" + aumento.toLocaleString(toLocaleString('pt-BR' ,{ style:'currency',
+currency: 'BRL' })));
+document.write("<hr>");
+document.write ("seu novo salario sera de:" + novoSalario.toLocaleString(toLocaleString('pt-BR' ,{ style:'currency',
+currency: 'BRL' })));
+document.write("<hr>");
+}
+
+else if(codigo == 3) {
+document.write("Cargo: caixa");
+document.write("<hr>");
+
+aumento = salario * (20/100);
+novoSalario = salario + aumento
+document.write ("Voce recebera um aumento de:" + aumento.toLocaleString(toLocaleString('pt-BR' , { style:'currency',
+currency: 'BRL' })));
+document.write("<hr>");
+document.write ("seu novo salario sera de:" + novoSalario.toLocaleString(toLocaleString('pt-BR' , { style:'currency',
+currency: 'BRL' })));
+document.write("<hr>");
+
+}
+
+</script>
